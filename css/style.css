@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-color: #878cbe;
+}
+
+.header-container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.header-logo {
+  padding: 45px 0;
+  border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo .header-logo-box {
+  color: #000000;
+}
+
+.header-logo .header-logo-box .header-logo-active {
+  color: #66697e;
+}
+
+.header-logo .header-menu {
+  width: 585px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header-title-discription-button {
+  padding: 155px 0 157px;
+}
+
+.header-title-discription-button .header-title {
+  padding-bottom: 41px;
+  margin: auto;
+  max-width: 865px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 65px;
+}
+
+.header-title-discription-button .header-discription {
+  padding-bottom: 76px;
+  margin: auto;
+  text-align: center;
+  max-width: 912px;
+  color: #000000;
+  font-size: 22px;
+}
+
+.header-title-discription-button .header-button {
+  width: 201px;
+  height: 47px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e84545;
+  border: 0;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.header-title-discription-button .header-button:hover {
+  cursor: pointer;
+}
+
+.header-title-discription-button .header-button:active {
+  -webkit-box-shadow: inset -2px -2px 3px rgba(216, 216, 216, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset -2px -2px 3px rgba(216, 216, 216, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
