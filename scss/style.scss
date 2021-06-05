@@ -1,2 +1,11 @@
 @import "_reset";
 @import "_header";
+@import "_features";
+@import "_dowload";
+@import "_footer";
+
+header,
+footer,
+.section {
+    width: 100%;
+}
