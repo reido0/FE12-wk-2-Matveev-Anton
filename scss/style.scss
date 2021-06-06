@@ -1,3 +1,4 @@
+@import "_mixins";
 @import "_reset";
 @import "_header";
 @import "_features";
@@ -8,4 +9,10 @@ header,
 footer,
 .section {
     width: 100%;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
