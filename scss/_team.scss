@@ -1,0 +1,56 @@
+.team {
+    width: 100%;
+    padding: 100px 0 100px;
+
+    .team-container {
+        max-width: 1170px;
+        margin: auto;
+        padding: 0 15px;
+
+        .team-container-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .team-container-row-item {
+                width: 272px;
+
+                .team-container-row-item-avatar {
+                    padding-bottom: 30px;
+                }
+
+                .team-container-row-item-name {
+                    font-size: 22px;
+                    padding-bottom: 16px;
+                }
+
+                .team-container-row-item-position {
+                    padding-bottom: 29px;
+                }
+
+                .team-container-row-item-discription {
+                    padding-bottom: 30px;
+                }
+
+                .team-container-row-item-social-icons-row {
+                    display: flex;
+                    .team-container-row-item-social-icon {
+                        // height: 41px;
+                        width: 41px;
+                        margin-right: 3px;
+
+                        path {
+                            fill: #111;
+                            transition: 0.3s;
+
+                            &:hover {
+                                fill: rgb(206, 0, 0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
