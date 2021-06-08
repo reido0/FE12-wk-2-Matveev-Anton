@@ -18,9 +18,29 @@
                 min-width: 470px;
                 height: 351px;
                 overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 padding: 1px 1px;
                 transition: 0.4s;
                 position: relative;
+                border: 1px solid white;
+
+                // background: url("../img/work_1.jpg");
+                // background-repeat: no-repeat;
+                // background-size: cover;
+                // background-position: center;
+                // position: relative;
+                .works-container-row-item-title {
+                    font-size: 14px;
+                    font-weight: 700;
+                    font-family: "Raleway", sans-serif;
+                    text-transform: uppercase;
+                }
+                .works-container-row-item-discription {
+                    font-size: 14px;
+                    font-family: "Raleway", sans-serif;
+                }
             }
         }
     }
@@ -41,12 +61,14 @@
     top: 0;
     left: 0;
     // z-index: 2;
-    transition: opacity 0.2s linear;
+    transition: 0.5s;
+
     &:hover {
         opacity: 1;
         // filter: blur(5px);
-        .works-container-row-item-title {
-            padding-bottom: 13px;
-        }
+    }
+
+    .works-container-row-item-title {
+        padding-bottom: 13px;
     }
 }

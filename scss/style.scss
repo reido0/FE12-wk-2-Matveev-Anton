@@ -6,6 +6,7 @@
 @import "_footer";
 @import "_team";
 @import "_works";
+@import "_slider";
 
 header,
 footer,
@@ -16,5 +17,5 @@ footer,
 .page {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    // height: 100vh;
 }
