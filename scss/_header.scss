@@ -4,6 +4,8 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    // width: 100vh;
+    // height: 100vh;
 
     &::after {
         content: "";
@@ -39,7 +41,7 @@
             }
 
             .header-container-menu {
-                width: 585px;
+                min-width: 585px;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
