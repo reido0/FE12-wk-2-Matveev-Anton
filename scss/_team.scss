@@ -13,9 +13,16 @@
             justify-content: space-between;
             flex-wrap: wrap;
 
+            @include for-phone-and-tablet-only {
+                justify-content: center;
+            }
+
             .team-container-row-item {
                 width: 272px;
 
+                @include for-phone-and-tablet-only {
+                    margin: 0 20px 20px;
+                }
                 .team-container-row-item-avatar {
                     padding-bottom: 30px;
                 }

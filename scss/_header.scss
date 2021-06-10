@@ -34,6 +34,7 @@
 
             @include for-phone-and-tablet-only {
                 flex-direction: column;
+                text-align: center;
             }
 
             .header-container-logo-box {
@@ -54,40 +55,44 @@
                 }
             }
 
-            .header-container-menu {
-                min-width: 585px;
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                font-size: 13px;
-                font-weight: 600;
-                font-family: "Raleway", sans-serif;
-                text-transform: uppercase;
+            .header-container-menu-row {
+                flex-basis: 50%;
 
-                @include for-phone-and-tablet-only {
-                    min-width: 0;
-                    max-width: 400px;
-                    flex-direction: column;
-                    // justify-content: center;
-                }
-
-                .header-container-menu-item {
-                    color: #ffffff;
-                    // display: block;
-                    border: 1px solid rgba(0, 0, 0, 0);
-                    // width: 100px;
-                    // margin-left: 20px;
+                .header-container-menu {
+                    // min-width: 585px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    font-size: 13px;
+                    font-weight: 600;
+                    font-family: "Raleway", sans-serif;
+                    text-transform: uppercase;
 
                     @include for-phone-and-tablet-only {
                         min-width: 0;
-                        margin-left: 0;
-                        // margin: 0 10px;
-                        // margin-bottom: 30px;
-                        text-align: center;
+                        max-width: 400px;
+                        flex-direction: column;
+                        // justify-content: center;
                     }
 
-                    &:hover {
-                        color: #e84545;
+                    .header-container-menu-item {
+                        color: #ffffff;
+                        // display: block;
+                        border: 1px solid rgba(0, 0, 0, 0);
+                        // width: 100px;
+                        // margin-left: 20px;
+
+                        @include for-phone-and-tablet-only {
+                            min-width: 0;
+                            margin-left: 0;
+                            // margin: 0 10px;
+                            // margin-bottom: 30px;
+                            text-align: center;
+                        }
+
+                        &:hover {
+                            color: #e84545;
+                        }
                     }
                 }
             }
@@ -109,6 +114,10 @@
                     font-weight: 700;
                     line-height: 1.1;
                     font-family: "Open Sans", sans-serif;
+
+                    @include for-phone-and-tablet-only {
+                        font-size: 47px;
+                    }
                 }
             }
             .header-container-discription {
@@ -177,4 +186,7 @@
 }
 
 .header-container-menu-li {
+    @include for-phone-and-tablet-only {
+        margin-bottom: 10px;
+    }
 }

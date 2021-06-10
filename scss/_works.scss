@@ -20,11 +20,15 @@
                 overflow: hidden;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                // align-items: center;
                 padding: 1px 1px;
                 transition: 0.4s;
                 position: relative;
                 border: 1px solid white;
+
+                @mixin for-phone-and-tablet-only {
+                    min-width: none;
+                }
 
                 // background: url("../img/work_1.jpg");
                 // background-repeat: no-repeat;
