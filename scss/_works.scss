@@ -29,50 +29,45 @@
                 @mixin for-phone-and-tablet-only {
                     min-width: none;
                 }
-
                 // background: url("../img/work_1.jpg");
                 // background-repeat: no-repeat;
                 // background-size: cover;
                 // background-position: center;
                 // position: relative;
-                .works-container-row-item-title {
-                    font-size: 0.875rem;
-                    font-weight: 700;
-                    font-family: "Raleway", sans-serif;
-                    text-transform: uppercase;
-                }
-                .works-container-row-item-discription {
-                    font-size: 0.875rem;
-                    font-family: "Raleway", sans-serif;
+                .works-container-row-item-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(218, 45, 45, 0.85);
+                    opacity: 0;
+                    text-align: center;
+                    font-size: 1.25rem;
+                    color: #ffffff;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: 0.5s;
+
+                    &:hover {
+                        opacity: 1;
+                        // filter: blur(5px);
+                    }
+
+                    .works-container-row-item-title {
+                        padding-bottom: 13px;
+                        font-size: 0.875rem;
+                        font-weight: 700;
+                        font-family: "Raleway", sans-serif;
+                        text-transform: uppercase;
+                    }
+                    .works-container-row-item-discription {
+                        font-size: 0.875rem;
+                        font-family: "Raleway", sans-serif;
+                    }
                 }
             }
         }
-    }
-}
-
-.works-container-row-item-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(218, 45, 45, 0.85);
-    opacity: 0;
-    text-align: center;
-    font-size: 1.25rem;
-    color: #ffffff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    // z-index: 2;
-    transition: 0.5s;
-
-    &:hover {
-        opacity: 1;
-        // filter: blur(5px);
-    }
-
-    .works-container-row-item-title {
-        padding-bottom: 13px;
     }
 }

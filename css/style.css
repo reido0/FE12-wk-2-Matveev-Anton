@@ -692,19 +692,7 @@
   border: 1px solid white;
 }
 
-.works .works-container .works-container-row .works-container-row-item .works-container-row-item-title {
-  font-size: 0.875rem;
-  font-weight: 700;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-}
-
-.works .works-container .works-container-row .works-container-row-item .works-container-row-item-discription {
-  font-size: 0.875rem;
-  font-family: "Raleway", sans-serif;
-}
-
-.works-container-row-item-content {
+.works .works-container .works-container-row .works-container-row-item .works-container-row-item-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -729,12 +717,21 @@
   transition: 0.5s;
 }
 
-.works-container-row-item-content:hover {
+.works .works-container .works-container-row .works-container-row-item .works-container-row-item-content:hover {
   opacity: 1;
 }
 
-.works-container-row-item-content .works-container-row-item-title {
+.works .works-container .works-container-row .works-container-row-item .works-container-row-item-content .works-container-row-item-title {
   padding-bottom: 13px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+
+.works .works-container .works-container-row .works-container-row-item .works-container-row-item-content .works-container-row-item-discription {
+  font-size: 0.875rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .wrapper {
