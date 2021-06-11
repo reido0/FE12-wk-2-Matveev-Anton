@@ -7,6 +7,10 @@
     // width: 100vh;
     height: 100vh;
 
+    // @include for-phone-five-only {
+    //     height: auto;
+    // }
+
     &::after {
         content: "";
         width: 100%;
@@ -35,11 +39,12 @@
             @include for-phone-and-tablet-only {
                 flex-direction: column;
                 text-align: center;
+                padding: 10px 0;
             }
 
             .header-container-logo-box {
                 color: #ffffff;
-                font-size: 34px;
+                font-size: 2.125rem;
                 font-weight: 300;
                 font-family: "Open Sans", sans-serif;
 
@@ -49,7 +54,7 @@
 
                 .header-container-logo-active {
                     color: #66697e;
-                    font-size: 34px;
+                    font-size: 2.125rem;
                     font-weight: 900;
                     font-family: "Raleway", sans-serif;
                 }
@@ -63,7 +68,7 @@
                     display: flex;
                     justify-content: space-between;
                     flex-wrap: wrap;
-                    font-size: 13px;
+                    font-size: 0.8125rem;
                     font-weight: 600;
                     font-family: "Raleway", sans-serif;
                     text-transform: uppercase;
@@ -101,6 +106,10 @@
         .header-container-title-discription-button {
             padding: 155px 0 157px;
 
+            @include for-phone-and-tablet-only {
+                padding: 15px 0 20px;
+            }
+
             .header-container-title {
                 padding-bottom: 30px;
                 margin: auto;
@@ -110,13 +119,13 @@
                 text-transform: uppercase;
 
                 h1 {
-                    font-size: 64px;
+                    font-size: 4rem;
                     font-weight: 700;
                     line-height: 1.1;
                     font-family: "Open Sans", sans-serif;
 
                     @include for-phone-and-tablet-only {
-                        font-size: 47px;
+                        font-size: 30px;
                     }
                 }
             }
@@ -126,8 +135,12 @@
                 text-align: center;
                 max-width: 912px;
                 color: #ffffff;
-                font-size: 22px;
+                font-size: 1.375rem;
                 font-family: "Raleway", sans-serif;
+
+                @include for-phone-five-only {
+                    font-size: 12px;
+                }
             }
             .header-container-button {
                 width: 201px;
@@ -139,7 +152,7 @@
                 background-color: #e84545;
                 border: 0;
                 color: #ffffff;
-                font-size: 13px;
+                font-size: 0.8125rem;
                 font-weight: 600;
                 font-family: "Raleway", sans-serif;
                 text-transform: uppercase;
