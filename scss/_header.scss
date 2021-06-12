@@ -107,7 +107,7 @@
             padding: 155px 0 157px;
 
             @include for-phone-and-tablet-only {
-                padding: 15px 0 20px;
+                padding: 15px 0 30px;
             }
 
             .header-container-title {
@@ -140,11 +140,13 @@
 
                 @include for-phone-five-only {
                     font-size: 12px;
+                    padding-bottom: 66px;
                 }
             }
             .header-container-button {
                 width: 201px;
                 height: 47px;
+                border-radius: 2px;
                 margin: auto;
                 display: flex;
                 justify-content: center;
