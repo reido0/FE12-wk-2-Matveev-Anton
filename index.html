@@ -357,12 +357,30 @@
             </div>
         </section>
         <!-- Slider -->
-        <div class="wrapper">
+        <section class="slider">
 			<!-- Контент -->
 
-			<div class="slider">
-				<div class="slider__item filter">
-					<img src="img/pexels-andrea.jpeg" alt="#">
+			<div class="container slider-container">
+
+				<div class="slider__item">
+                    <div class="slider__item-image">
+                        <img class="slider__item-img" src="img/pexels-andrea.jpeg" alt="#">
+                    </div>
+					
+                    <div class="slide-feedback">
+                        <p class="slide-feedback-text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                        </p>
+                        <p class="slide-feedback-user">Susan Sims, Interaction Designer at XYZ
+                        </p>
+                        <!-- <div class="item__dots"></div> -->
+                    </div>
+				</div>
+                
+				<div class="slider__item">
+					<div class="slider__item-image">
+                        <img class="slider__item-img" src="img/pexels-anna.jpeg" alt="#">
+                    </div>
+					
                     <div class="slide-feedback">
                         <p class="slide-feedback-text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
                         </p>
@@ -372,17 +390,10 @@
 				</div>
                 
 				<div class="slider__item">
-					<img src="img/pexels-anna.jpeg" alt="#">
-                    <div class="slide-feedback">
-                        <p class="slide-feedback-text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
-                        </p>
-                        <p class="slide-feedback-user">Susan Sims, Interaction Designer at XYZ
-                        </p>
+					<div class="slider__item-image">
+                        <img class="slider__item-img" src="img/pexels-emre.jpeg" alt="#">
                     </div>
-				</div>
-                
-				<div class="slider__item filter">
-					<img src="img/pexels-ekaterina.jpeg" alt="#">
+					
                     <div class="slide-feedback">
                         <p class="slide-feedback-text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
                         </p>
@@ -392,7 +403,10 @@
 				</div>
                 
 				<div class="slider__item">
-					<img src="img/pexels-emre.jpeg" alt="#">
+					<div class="slider__item-image">
+                        <img class="slider__item-img" src="img/pexels-ekaterina.jpeg" alt="#">
+                    </div>
+					
                     <div class="slide-feedback">
                         <p class="slide-feedback-text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
                         </p>
@@ -402,15 +416,8 @@
 				</div>
                 
 			</div>
-			
-            
-			<!-- Подключаем jQuery -->
-			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-			<!-- Подключаем слайдер Slick -->
-			<script src="js/slick.min.js"></script>
-			<!-- Подключаем файл скриптов -->
-			<script src="js/script.js"></script>
-		</div>
+	
+		</section>
         <!-- Section Dowload -->
         <section class="download">
             <div class="container download-container">
@@ -479,6 +486,14 @@
             </section>
             
         </footer>
+
+        <!-- Подключаем jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!-- Подключаем слайдер Slick -->
+			<script src="js/slick.min.js"></script>
+			<!-- Подключаем файл скриптов -->
+			<script src="js/script.js"></script>
+
     </div>
 </body>
 </html>
