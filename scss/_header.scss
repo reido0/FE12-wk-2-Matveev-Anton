@@ -4,12 +4,11 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    // width: 100vh;
     height: 100vh;
 
-    // @include for-phone-five-only {
-    //     height: auto;
-    // }
+    @media (orientation: landscape) {
+        height: auto;
+    }
 
     &::after {
         content: "";
@@ -63,6 +62,14 @@
             .header-container-menu-row {
                 flex-basis: 50%;
 
+                @media (max-width: 1023px) {
+                    width: 90%;
+                }
+
+                @media (max-width: 530px) {
+                    width: 90%;
+                }
+
                 .header-container-menu {
                     // min-width: 585px;
                     display: flex;
@@ -75,9 +82,11 @@
 
                     @include for-phone-and-tablet-only {
                         min-width: 0;
-                        max-width: 400px;
+                        // max-width: 400px;
+                    }
+
+                    @media (max-width: 530px) {
                         flex-direction: column;
-                        // justify-content: center;
                     }
 
                     .header-container-menu-item {
@@ -181,12 +190,14 @@
     }
 }
 
+// Эффект подчеркивания
 .header-container-menu-li,
 .header-container-menu-item {
-    // text-decoration: none;
-    // font-size: 1em;
-    // position: relative;
     transition: all 0.6s;
+
+    @include for-phone-and-tablet-only {
+        margin-bottom: 10px;
+    }
 
     &:before {
         content: "";
@@ -205,11 +216,5 @@
             left: 0;
             background: #e84545;
         }
-    }
-}
-
-.header-container-menu-li {
-    @include for-phone-and-tablet-only {
-        margin-bottom: 10px;
     }
 }

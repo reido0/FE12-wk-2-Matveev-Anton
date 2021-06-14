@@ -17,12 +17,11 @@ footer,
 .page {
     display: flex;
     flex-direction: column;
-    // height: 100vh;
     min-width: 320px;
 }
 
-// @include for-phone-and-tablet-only {
-//     html {
-//         font-size: 11px;
-//     }
-// }
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
