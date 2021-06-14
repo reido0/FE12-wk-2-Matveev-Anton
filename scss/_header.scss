@@ -110,13 +110,13 @@
             padding: 155px 0 157px;
 
             @media (orientation: landscape) {
-                @media (min-width: 432px) and (max-width: 1700px) {
+                @media (min-width: 432px) and (max-width: 1023px) {
                     padding: 10px;
                 }
             }
 
             @media (orientation: portrait) {
-                @media (min-width: 432px) and (max-width: 1700px) {
+                @media (min-width: 432px) and (max-width: 1023px) {
                     padding: 60px 0;
                 }
             }
@@ -160,7 +160,7 @@
                 font-family: "Raleway", sans-serif;
 
                 @media (orientation: landscape) {
-                    @media (min-width: 432px) and (max-width: 1700px) {
+                    @media (min-width: 432px) and (max-width: 1023px) {
                         padding-bottom: 10px;
                     }
                 }
