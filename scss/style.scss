@@ -19,9 +19,3 @@ footer,
     flex-direction: column;
     min-width: 320px;
 }
-
-@media (orientation: landscape) {
-    body {
-        flex-direction: row;
-    }
-}

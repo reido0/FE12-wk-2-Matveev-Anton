@@ -6,9 +6,9 @@
     position: relative;
     height: 100vh;
 
-    @media (orientation: landscape) {
-        height: auto;
-    }
+    // @media (orientation: landscape) {
+    //     height: auto;
+    // }
 
     &::after {
         content: "";
@@ -71,7 +71,6 @@
                 }
 
                 .header-container-menu {
-                    // min-width: 585px;
                     display: flex;
                     justify-content: space-between;
                     flex-wrap: wrap;
@@ -91,16 +90,11 @@
 
                     .header-container-menu-item {
                         color: #ffffff;
-                        // display: block;
                         border: 1px solid rgba(0, 0, 0, 0);
-                        // width: 100px;
-                        // margin-left: 20px;
 
                         @include for-phone-and-tablet-only {
                             min-width: 0;
                             margin-left: 0;
-                            // margin: 0 10px;
-                            // margin-bottom: 30px;
                             text-align: center;
                         }
 
@@ -115,12 +109,26 @@
         .header-container-title-discription-button {
             padding: 155px 0 157px;
 
-            @media (min-width: 361px) and (max-width: 1700px) {
-                padding: 100px 0;
+            @media (orientation: landscape) {
+                @media (min-width: 432px) and (max-width: 1700px) {
+                    padding: 10px;
+                }
             }
 
-            @media (max-width: 360px) {
-                padding: 15px 0 30px;
+            @media (orientation: portrait) {
+                @media (min-width: 432px) and (max-width: 1700px) {
+                    padding: 60px 0;
+                }
+            }
+
+            @media (orientation: portrait) {
+                @media (max-width: 432px) {
+                    padding: 60px 0;
+                }
+            }
+
+            @media (max-width: 328px) {
+                padding: 25px 0;
             }
 
             .header-container-title {
@@ -151,13 +159,18 @@
                 font-size: 1.375rem;
                 font-family: "Raleway", sans-serif;
 
+                @media (orientation: landscape) {
+                    @media (min-width: 432px) and (max-width: 1700px) {
+                        padding-bottom: 10px;
+                    }
+                }
+
                 @include for-phone-and-tablet-only {
                     font-size: 12px;
                 }
 
                 @include for-phone-five-only {
                     font-size: 12px;
-                    padding-bottom: 66px;
                 }
             }
             .header-container-button {
