@@ -57,6 +57,11 @@
                         margin-right: 3px;
                         transition: 0.3s;
 
+                        img {
+                            height: 41px;
+                            width: 41px;
+                        }
+
                         &:hover {
                             transform: scale(1.2);
                         }
