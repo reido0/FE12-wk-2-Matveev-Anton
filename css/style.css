@@ -216,18 +216,6 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
-  .header-container .header-container-title-discription-button .header-container-discription {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .header-container .header-container-title-discription-button .header-container-discription {
-    font-size: 12px;
-  }
-}
-
 .header-container .header-container-title-discription-button .header-container-button {
   width: 201px;
   height: 47px;

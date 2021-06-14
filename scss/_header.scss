@@ -165,13 +165,13 @@
                     }
                 }
 
-                @include for-phone-and-tablet-only {
-                    font-size: 12px;
-                }
+                // @include for-phone-and-tablet-only {
+                //     font-size: 12px;
+                // }
 
-                @include for-phone-five-only {
-                    font-size: 12px;
-                }
+                // @include for-phone-five-only {
+                //     font-size: 12px;
+                // }
             }
             .header-container-button {
                 width: 201px;
