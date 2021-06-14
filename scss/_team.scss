@@ -13,16 +13,30 @@
             justify-content: space-between;
             flex-wrap: wrap;
 
-            @include for-phone-and-tablet-only {
+            @media (max-width: 1150px) {
+                justify-content: space-around;
+            }
+
+            @media (max-width: 614px) {
                 justify-content: center;
             }
 
+            // @include for-phone-and-tablet-only {
+            //     justify-content: center;
+            // }
+
             .team-container-row-item {
                 width: 272px;
+                // margin: 0 5px 0;
 
-                @include for-phone-and-tablet-only {
-                    margin: 0 20px 20px;
+                @media (max-width: 1150px) {
+                    margin: 0 50px;
                 }
+
+                @media (max-width: 775px) {
+                    margin: 0 10px;
+                }
+
                 .team-container-row-item-avatar {
                     padding-bottom: 30px;
                 }
