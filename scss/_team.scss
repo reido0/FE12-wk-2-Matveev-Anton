@@ -23,14 +23,13 @@
 
             .team-container-row-item {
                 width: 272px;
-                // margin: 0 5px 0;
 
                 @media (max-width: 1150px) {
-                    margin: 0 50px;
+                    margin: 30px 50px;
                 }
 
                 @media (max-width: 775px) {
-                    margin: 0 10px;
+                    margin: 30px 10px;
                 }
 
                 .team-container-row-item-avatar {
